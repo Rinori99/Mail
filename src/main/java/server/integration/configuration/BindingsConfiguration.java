@@ -12,12 +12,12 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class BindingsConfiguration {
 
-    @Value("${binding.simple.email}")
-    private String emailDirectBindingKey;
-
-    @Bean
-    public Binding bindDirectExchangeToEmailQueue(@Qualifier("emailQueue") Queue emailQueue, DirectExchange directExchange) {
-        return BindingBuilder.bind(emailQueue).to(directExchange).with(emailDirectBindingKey);
-    }
+//    @Value("${binding.simple.email}")
+////    private String emailDirectBindingKey;
+////
+////    @Bean
+////    public Binding bindDirectExchangeToEmailQueue(@Qualifier("emailQueue") Queue emailQueue, DirectExchange directExchange) {
+////        return BindingBuilder.bind(emailQueue).to(directExchange).with(emailDirectBindingKey);
+////    }
 
 }

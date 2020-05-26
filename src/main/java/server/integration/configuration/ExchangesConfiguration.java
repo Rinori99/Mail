@@ -8,12 +8,12 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class ExchangesConfiguration {
 
-    @Value("${exchange.direct}")
-    private String directExchange;
-
-    @Bean
-    public DirectExchange directExchange() {
-        return new DirectExchange(directExchange);
-    }
+//    @Value("${exchange.direct}")
+//    private String directExchange;
+//
+//    @Bean
+//    public DirectExchange directExchange() {
+//        return new DirectExchange(directExchange);
+//    }
 
 }
