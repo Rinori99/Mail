@@ -17,7 +17,7 @@ public class EmailSenderConfiguration {
         mailSender.setPort(587);
 
         mailSender.setUsername("education.platform.noreply@gmail.com");
-        mailSender.setPassword("dbfaifdaikmkujhf");
+        mailSender.setPassword("dktjnkdloeuqippo");
 
         Properties props = mailSender.getJavaMailProperties();
         props.put("mail.transport.protocol", "smtp");

@@ -16,7 +16,6 @@ public class EmailConsumer {
 
     @RabbitListener(queues = "${queue.email}")
     public void handleSimpleEmailQueueReception(SerializableEmail serializableEmail) {
-        System.err.println("here");
         emailService.sendSimpleMessage(serializableEmail.getTo(), serializableEmail.getSubject(), serializableEmail.getText());
     }
 
